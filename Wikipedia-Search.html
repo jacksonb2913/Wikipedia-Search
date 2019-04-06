@@ -50,7 +50,39 @@ a{
 }
 </style>
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+<body>
+ <center>  
+<header>
+<h1 class = "title">Wikipedia Search</h1>
+</header>
+     
+
+
+    
+     <a href = 'https://en.wikipedia.org/wiki/Special:Random' target= '_blank'>
+       <button class = "btn">View a Random Article</button></a>  
+
+  <br>            
+    <br>     
+  <input placeholder = " Search Wikipedia" id="searchTerm" type="text" class="search-box"> </input>  
+  
+<button onclick = 'search()' class = 'btn' > Search Wikipedia</button>
+        
+
+   <div class = 'bottom'>Search Results: 
+   <p id="article"> </p>
+   </div>        
+ <p class = 'bottom'> Made by Bishop Jackson<br>
+   Contact me at <a href="mailto:bjthedj11@gmail.com" style="color:white !important;">bjthedj11@gmail.com</a>
+   </p>
+       
+            </center>   
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
     var article;
 
 document.getElementById('searchTerm').onkeydown = function(key){
@@ -83,33 +115,3 @@ $("<a href = 'https://en.wikipedia.org/?curid="+results.pageid+"' target = _blan
 
 		
 </script>
-
-<body>
- <center>  
-<header>
-<h1 class = "title">Wikipedia Search</h1>
-</header>
-     
-
-
-    
-     <a href = 'https://en.wikipedia.org/wiki/Special:Random' target= '_blank'>
-       <button class = "btn">View a Random Article</button></a>  
-
-  <br>            
-    <br>     
-  <input placeholder = " Search Wikipedia" id="searchTerm" type="text" class="search-box"  </input>  
-  
-<button onclick = 'search()' class = 'btn' > Search Wikipedia</button>
-        
-
-   <div class = 'bottom'>Search Results: 
-   <p id="article"> </p>
-   </div>        
- <p class = 'bottom'> Made by Bishop Jackson<br>
-   Contact me at <a href="mailto:bjthedj11@gmail.com" style="color:white !important;">bjthedj11@gmail.com</a>
-   </p>
-       
-            </center>   
-
-</body>
